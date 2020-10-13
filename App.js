@@ -7,6 +7,8 @@
  */
 
 import React from 'react';
+import {Text} from 'React-Native';
+import Header from './src/components/Header';
 import {
   SafeAreaView,
   StyleSheet,
@@ -111,4 +113,17 @@ const styles = StyleSheet.create({
   },
 });
 
+
+export default class App extends Component<{}> {
+  render() {  
+    return (
+      <View>
+       <Header headerText={'Ornek Proje'}/>
+       </View>
+    );
+  }
+}
+
+/*
 export default App;
+*/
